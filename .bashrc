@@ -81,3 +81,4 @@ PROMPT='%F{139}%2~%f$(git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* .*/\ /
 
 # Use config as 'git add' when managing dotfiles.
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+set -o vi
