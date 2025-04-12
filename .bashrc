@@ -1,3 +1,6 @@
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+    exec tmux
+fi
 # Git branch display functions
 # =============================================================================
 
@@ -81,4 +84,5 @@ PROMPT='%F{139}%2~%f$(git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* .*/\ /
 
 # Use config as 'git add' when managing dotfiles.
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias v='vim -c "source ~/.vimrc"'
 set -o vi

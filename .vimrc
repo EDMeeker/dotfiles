@@ -16,6 +16,9 @@ set expandtab
 set autoindent
 filetype plugin indent on
 
+" Scroll Settings
+set scrolloff=999
+
 " Color Scheme (Dreamy Night)
 " MediumPurple4 - #5f5f87 - rgb(95,95,135)   - 60
 " Grey63        - #af87af - rgb(175,135,175) - 139
